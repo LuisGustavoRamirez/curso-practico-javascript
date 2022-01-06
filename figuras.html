@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/app.css" />
+    <title>Figuras geométricas</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Primer Taller del curso practico de JavaScript</h1>
+    </header>
+    <h2 class="title-section">Figuras Geométricas</h2>
+    <div class="container-componentes">
+      <section class="container-figura">
+        <h3>Calcular el area y el perímetro de un cuadrado</h3>
+        <form action="/figuras.html" class="fomulario">
+          <label for="ladoCuadrado"
+            >Ingrese el valor de un "lado" del cuadrado</label
+          >
+          <input type="number" name="ladoCuadrado" id="ladoCuadrado" />
+          <div class="campo-btn">
+            <button
+              type="button"
+              class="btn"
+              onclick="calcularPerimetroCuadrado()"
+            >
+              Calcular el perímetro
+            </button>
+            <button type="button" class="btn" onclick="calcularAreaCuadrado()">
+              Calcular el Area
+            </button>
+          </div>
+        </form>
+        <div id="resultados-cuadrado"></div>
+      </section>
+      <section class="container-figura">
+        <h3>Calcular el area y el perímetro de un triángulo</h3>
+        <form action="/figuras.html" class="fomulario">
+          <label for="ladoA">Ingrese el valor de un "lado A" del triángulo</label>
+          <input type="number" name="ladoA" id="ladoA" />
+          <label for="ladoB">Ingrese el valor de un "lado B" del triángulo</label>
+          <input type="number" name="ladoB" id="ladoB" />
+          <label for="ladoBase"
+            >Ingrese el valor de la "Base" del triángulo</label
+          >
+          <input type="number" name="ladoBase" id="ladoBase" />
+          <div class="campo-btn">
+            <button
+              type="button"
+              class="btn"
+              onclick="calcularPerimetroTriangulo()"
+            >
+              Calcular el perímetro
+            </button>
+            <button type="button" class="btn" onclick="calcularAreaTriangulo()">
+              Calcular el Area
+            </button>
+          </div>
+        </form>
+        <div id="resultados-triangulo"></div>
+      </section>
+      <section class="container-figura">
+        <h3>Calcular el area y el perímetro de un círculo</h3>
+        <form action="/figuras.html" class="fomulario">
+          <label for="radio">Ingrese el valor del radio del círculo</label>
+          <input type="number" name="radio" id="radio" />
+          <div class="campo-btn">
+            <button
+              type="button"
+              class="btn"
+              onclick="calcularPerimetroCirculo()"
+            >
+              Calcular el perímetro
+            </button>
+            <button type="button" class="btn" onclick="calcularAreaCirculo()">
+              Calcular el Area
+            </button>
+          </div>
+        </form>
+        <div id="resultados-circulo"></div>
+      </section>
+    </div>
+    <script src="js/figuras.js"></script>
+  </body>
+</html>

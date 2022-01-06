@@ -1,0 +1,113 @@
+/* Declaraciones Globales */
+:root {
+  --primarioClaro: #284B63;
+  --primarioOscuro: #153243;
+  --secundarioClaro: #F4F9E9;
+  --secundarioOscuro: #EEF0EB;
+  --ash-grey:#B4B8AB;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body{
+  font-size: 62.5%;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background-color: var(--primarioOscuro);
+}
+h1{
+  font-size: 2.4rem;
+  color: var(--secundarioClaro);
+}
+h2{
+  font-size: 1.6rem;
+}
+h3{
+  font-size: 1.2rem;
+  color: var(--primarioOscuro);
+}
+p{
+  font-size: 0.8rem;
+}
+h1,h2,h3,p{
+  margin: 0;
+}
+/* layout */
+.header{
+  text-align: center;
+  margin-top: 1.2rem;
+}
+.title-section{
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--ash-grey);
+}
+.container-componentes{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  height: auto;
+  padding: 0.8rem;
+}
+.container-figura{
+  padding: 1.6rem;
+  background-color: var(--ash-grey);
+  border-radius: 0.8rem;  
+}
+.fomulario{
+  display: flex;
+  flex-direction: column;
+}
+.fomulario label{
+  font-size: 1rem;
+  margin: 0.8rem 0;
+  color: var(--secundarioOscuro);
+  font-weight: bold;
+}
+.fomulario input{
+  border: none;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  background-color: var(--secundarioOscuro);
+  font-size: 1rem;
+  font-weight: bold;
+}
+.campo-btn{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 0.4rem;
+  margin-top: 1.6rem;
+}
+.btn{
+  cursor: pointer;
+  padding: 0.6rem 0.4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: var(--primarioOscuro);
+  color: var(--white);
+}
+.btn:hover{
+  background-color: var(--primarioClaro);
+  color: var(--white);
+}
+.error{
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  background-color:var(--white);
+  border-left:4px solid var(--primarioOscuro);
+  padding-left: 0.4rem;
+  color: var(--primarioOscuro);
+}
+
