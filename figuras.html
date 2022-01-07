@@ -20,21 +20,21 @@
     <h2 class="title-section">Figuras Geométricas</h2>
     <div class="container-componentes">
       <section class="container-figura">
-        <h3>Calcular el area y el perímetro de un cuadrado</h3>
+        <h3>Calcular el area y el perímetro de un cuadrado.</h3>
         <form action="/figuras.html" class="fomulario">
           <label for="ladoCuadrado"
             >Ingrese el valor de un "lado" del cuadrado</label
           >
-          <input type="number" name="ladoCuadrado" id="ladoCuadrado" />
-          <div class="campo-btn">
+          <input class="entrada-dato" type="number" name="ladoCuadrado" id="ladoCuadrado" />
+          <div class="campo-btn" id="btn-cuadrado">
             <button
               type="button"
               class="btn"
-              onclick="calcularPerimetroCuadrado()"
+              id="perimetro"
             >
               Calcular el perímetro
             </button>
-            <button type="button" class="btn" onclick="calcularAreaCuadrado()">
+            <button type="button" class="btn" id="area">
               Calcular el Area
             </button>
           </div>
@@ -42,25 +42,25 @@
         <div id="resultados-cuadrado"></div>
       </section>
       <section class="container-figura">
-        <h3>Calcular el area y el perímetro de un triángulo</h3>
+        <h3>Calcular el area y el perímetro de un triángulo isósceles.</h3>
         <form action="/figuras.html" class="fomulario">
-          <label for="ladoA">Ingrese el valor de un "lado A" del triángulo</label>
-          <input type="number" name="ladoA" id="ladoA" />
-          <label for="ladoB">Ingrese el valor de un "lado B" del triángulo</label>
-          <input type="number" name="ladoB" id="ladoB" />
+          <label for="ladoA">Ingrese el valor del "lado A" del triángulo</label>
+          <input class="entrada-dato" type="number" name="ladoA" id="ladoA" />
+          <label for="ladoB">Ingrese el valor del "lado B" del triángulo</label>
+          <input class="entrada-dato" type="number" name="ladoB" id="ladoB" />
           <label for="ladoBase"
             >Ingrese el valor de la "Base" del triángulo</label
           >
-          <input type="number" name="ladoBase" id="ladoBase" />
-          <div class="campo-btn">
+          <input class="entrada-dato" type="number" name="ladoBase" id="ladoBase" />
+          <div class="campo-btn" id="btn-triangulo">
             <button
               type="button"
               class="btn"
-              onclick="calcularPerimetroTriangulo()"
+              id="perimetro"
             >
               Calcular el perímetro
             </button>
-            <button type="button" class="btn" onclick="calcularAreaTriangulo()">
+            <button type="button" class="btn" id="area">
               Calcular el Area
             </button>
           </div>
@@ -68,19 +68,19 @@
         <div id="resultados-triangulo"></div>
       </section>
       <section class="container-figura">
-        <h3>Calcular el area y el perímetro de un círculo</h3>
+        <h3>Calcular el area y el perímetro de un círculo.</h3>
         <form action="/figuras.html" class="fomulario">
           <label for="radio">Ingrese el valor del radio del círculo</label>
-          <input type="number" name="radio" id="radio" />
-          <div class="campo-btn">
+          <input class="entrada-dato" type="number" name="radio" id="radio" />
+          <div class="campo-btn" id="btn-circulo">
             <button
               type="button"
               class="btn"
-              onclick="calcularPerimetroCirculo()"
+              id="perimetro"
             >
               Calcular el perímetro
             </button>
-            <button type="button" class="btn" onclick="calcularAreaCirculo()">
+            <button type="button" class="btn" id="area">
               Calcular el Area
             </button>
           </div>
