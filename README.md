@@ -10,7 +10,14 @@
 
 ## Taller #2> Porcentajes y descuentos.
 
--Primer paso: Definir las formulas.
--Segundo paso: Implementar las formulas en JavaScript.
+- Primer paso: Definir las formulas.
+- Segundo paso: Implementar las formulas en JavaScript.
+- Tercer paso: Crear las funciones.
+- Cuarto paso: Integrar Js con HTML.
+
+## Taller #3> Media, Mediana y moda.
+
+- Primer paso: Definir las formulas.
+- Segundo paso: Implementar las formulas en JavaScript.
 - Tercer paso: Crear las funciones.
 - Cuarto paso: Integrar Js con HTML.
