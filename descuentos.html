@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/descuento.css" />
+    <title>Porcentajes y Descuentos</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>
+        Este es el segundo taller del curso de Platzi, curso practico de
+        JavaScript
+      </h1>
+      <h2>Porcentajes y Descuentos</h2>
+    </header>
+    <section class="container_descuento">
+      <h2>Calcula el precio a pagar por tus productos con descuentos</h2>
+      <form action="/descuentos.html" class="formulario">
+        <label for="precio">Ingrese por favor el precio de su producto.</label>
+        <input type="number" name="precio" id="precio" class="entrada-datos" />
+        <label for="descuento"
+          >Ingrese por favor el descuento a aplicar en el producto.</label
+        >
+        <input
+          type="number"
+          name="descuento"
+          id="descuento"
+          class="entrada-datos"
+        />
+        <button type="button" onclick="onClickButtonPriceDiscount()" class="btn">
+          Calcular el precio con descuento
+        </button>
+      </form>
+      <div class="resultados"></div>
+    </section>
+    <script src="/js/descuentos.js"></script>
+  </body>
+</html>
